@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compose</title>
+</head>
+<body>
+    <%- include('partials/header.ejs')  -%>
+    <h1>Compose</h1>
+    <form action="/compose" method="post">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Title</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="compose">
+            <label for="exampleInputEmail1">Post</label>
+            <textarea  cols="155" rows="10" name="post"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Compose</button>
+    </form>
+    <%- include('partials/footer.ejs')  -%>
+    
+</body>
+</html>
